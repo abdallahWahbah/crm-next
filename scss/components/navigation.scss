@@ -1,0 +1,97 @@
+.nav
+{
+    flex-basis: 18%;
+    min-height: 91vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    clip-path: inset(0px -15px 0px 0px); // When all of the four arguments are supplied they represent the top, right, bottom and left offsets from the reference box inward that define the positions of the edges of the inset rectangle
+
+    &__name--container
+    {
+        padding: 20px 20px 20px 30px;
+
+        display: flex;
+        align-items: center;
+
+        &>*:not(:last-child)
+        {
+            margin-right: 10px;
+        }
+    }
+    &__name--icon
+    {
+        font-size: 55px;
+        color: #ababab;
+    }
+    &__name
+    {
+        color: #656565;
+        font-size: 19px;
+    }
+
+    &__list
+    {
+        display: flex;
+        flex-direction: column;
+
+        & > li
+        {
+            margin-right: 0;
+        }
+        &--item
+        {
+            padding: 10px 10px 10px 30px;
+            cursor: pointer;
+            transition: background-color .1s ease-in-out;
+            
+            display: flex;
+            align-items: center;
+            &:not(:last-of-type)
+            {
+                margin-bottom: 7px;
+            }
+            
+            // &:hover
+            // {
+            //     background-color: #ff8000;
+            // }
+            // &:hover .nav__list--icon, &:hover .nav__list--label
+            // {
+            //     color: white;
+            // }
+            &.selected
+            {
+                background-color: #ff8000;
+                // color: white;
+                & > .nav__list--icon, & > .nav__list--label
+                {
+                    color: white;
+                }
+            }
+        }
+        &--icon
+        {
+            margin-right: 13px;
+            color: #ff8000;
+        }
+        &--label
+        {
+            margin-bottom: -6px;
+            font-size: 18px;
+            color: #656565;
+        }
+    }
+    // &__list--item
+    // {
+    //     color: #ff8000;
+    //     transition: all .3s ease;
+        
+    //     &:hover
+    //     {
+    //         color: #c74828
+    //     }
+    // }
+    // &__list--icon
+    // {
+    //     font-size: 50px;
+    // }
+}

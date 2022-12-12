@@ -1,0 +1,42 @@
+.login
+{
+    height: 75%;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(black, .2);
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__container
+    {
+        height: 100%;
+        width: 100%;
+    }
+    &__logo
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__header
+    {
+        text-transform: uppercase;
+        font-size: 35px !important;
+    }
+
+    &__form
+    {
+        padding: 20px 65px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button
+    {
+        flex: 1;
+    }
+}

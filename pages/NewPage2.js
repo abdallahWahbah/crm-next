@@ -1,12 +1,11 @@
 import React, { useState, useEffect} from 'react';
-import { useRouter } from 'next/router';
-import Header from '../components/Header';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header'
+import Navigation from '../components/Navigation'
 
-const HomePage = () => 
+const NewPage2 = () => 
 {
     const [userData, setUserData] = useState(null);
-    const navigate = useRouter();
+    const [selectedSection, setSelectedSection] = useState("");
 
     useEffect(()=>
     {
@@ -19,13 +18,14 @@ const HomePage = () =>
         <React.Fragment>
             <Header />
             <div className='home'>
-                <Navigation userData={userData} />
-
-                <div className='home__right'>
-                </div>
+                <Navigation 
+                    userData={userData}
+                    setSection={setSelectedSection} 
+                />
             </div>
+            newpage2
         </React.Fragment>
     )
 }
 
-export default HomePage
+export default NewPage2

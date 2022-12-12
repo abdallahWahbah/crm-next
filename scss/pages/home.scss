@@ -1,0 +1,80 @@
+.home
+{
+    display: flex;
+
+    &__right
+    {
+        flex-basis: 82%;
+
+        &--container
+        {
+            width: 90%;
+            margin-left: 40px;
+            margin-top: 20px;
+            box-shadow: 0 0px 5px rgba(black, .2);
+        }
+    }
+}
+
+.home__card
+{
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // &--text
+    // {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    &--title
+    {
+        color: #656565;
+    }
+    &--number
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &--icon
+    {
+        font-size: 30px;
+        color:#ff8000;
+    }
+}
+
+.table__details
+{
+    cursor: pointer;
+    color: rgb(0, 12, 146);
+}
+
+
+.paper__details
+{
+    box-shadow: 0 2px 5px rgba(black, .2);
+}
+
+.table__no--data
+{
+  position: relative;
+  & > td
+  {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+  }
+  .css-1ex1afd-MuiTableCell-root{padding-bottom: 5px;}
+}
+
+.btn__yellow
+{
+    background-color: #F1914F;
+    &:hover
+    {
+        background-color: #c76523;
+    }
+}

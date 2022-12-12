@@ -1,0 +1,49 @@
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    height: 10vh;
+    box-shadow: 0 2px 5px rgba(black, .2);
+
+    &__logo--container
+    {
+        height: 100%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+    }
+    &__logo
+    {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    &__title
+    {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    &__title--description
+    {
+        margin-top: -10px;
+    }
+
+    &__list--item
+    {
+        color: #ff8000;
+        transition: all .3s ease;
+        
+        &:hover
+        {
+            color: #c74828
+        }
+    }
+    &__list--icon
+    {
+        font-size: 35px;
+    }
+}

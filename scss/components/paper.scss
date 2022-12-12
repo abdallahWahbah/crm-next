@@ -1,0 +1,29 @@
+.paper
+{
+
+    & > *:not(:last-child)
+    {
+        margin-bottom: 15px;
+    }
+    &__details
+    {
+        display: block !important;
+    }
+    &__header
+    {
+        border-bottom: 2px solid #656565;
+        padding-bottom: 3px;
+        display: inline-block;
+    }
+    &__small--header
+    {
+        font-size: 20px;
+        border-bottom: 2px solid #656565;
+        display: inline-block;
+    }
+
+    &__list
+    {
+        margin-left: 15px;
+    }
+}
